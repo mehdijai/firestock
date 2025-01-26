@@ -1,0 +1,62 @@
+{
+  "stores": {
+    "4e90c249-07dc-4da6-8f99-01fcf60204ad": {
+      "name": "Store 1",
+      "address": "177 Bd, Zerktouni",
+      "city": "Casablanca",
+      "country": "Morocco",
+      "email": "contact@store.com",
+      "phone": "+2125xxxxxx",
+      "createdAt": 1737826262,
+      "updatedAt": 1737826262
+    }
+  },
+  "products": {
+    "1234567890": {
+      "name": "Product 1",
+      "description": "Product description",
+      "basePrice": 156.98,
+      "manufacturer": "YSL",
+      "createdAt": 1737826262,
+      "updatedAt": 1737826262
+    }
+  },
+  "stock": {
+    "1234567890": {
+      "storeId": "4e90c249-07dc-4da6-8f99-01fcf60204ad",
+      "expirations": [
+        {
+          "date": 1737826262,
+          "quantity": 900
+        },
+        {
+          "date": 1737826262,
+          "quantity": 100
+        }
+      ],
+      "soonestExpirationDate": 1737826262,
+      "quantity": 1000,
+      "reservedQuantity": 5,
+      "createdAt": 1737826262,
+      "updatedAt": 1737826262
+    }
+  },
+  "orders": {
+    "f915eb46-b4a2-442a-b327-5dfd2d599e35": {
+      "storeId": "4e90c249-07dc-4da6-8f99-01fcf60204ad",
+      "purchaseDate": 1737826262,
+      "items": [
+        {
+          "productBarcode": "1234567890",
+          "expirationDate": 1737826262,
+          "quantity": 3,
+          "price": 129.99
+        }
+      ],
+      "totalPrice": 409.46,
+      "status": "CONFIRMED",
+      "createdAt": 1737826262,
+      "updatedAt": 1737826262
+    }
+  }
+}

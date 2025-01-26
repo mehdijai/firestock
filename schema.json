@@ -1,0 +1,58 @@
+{
+  "stores": {
+    "storeId": {
+      "name": "string",
+      "address": "string",
+      "city": "string",
+      "country": "string",
+      "email": "string",
+      "phone": "string",
+      "createdAt": "timestamp",
+      "updatedAt": "timestamp"
+    }
+  },
+  "products": {
+    "barcode": {
+      "name": "string",
+      "description": "string",
+      "basePrice": "number",
+      "manufacturer": "string",
+      "createdAt": "timestamp",
+      "updatedAt": "timestamp"
+    }
+  },
+  "stock": {
+    "barcode": {
+      "storeId": "string",
+      "expirations": [
+        {
+          "date": "timestamp",
+          "quantity": "number"
+        }
+      ],
+      "soonestExpirationDate": "timestamp",
+      "quantity": "number",
+      "reservedQuantity": "number",
+      "createdAt": "timestamp",
+      "updatedAt": "timestamp"
+    }
+  },
+  "orders": {
+    "orderId": {
+      "storeId": "string",
+      "purchaseDate": "timestamp",
+      "items": [
+        {
+          "productBarcode": "string",
+          "expirationDate": "timestamp",
+          "quantity": "number",
+          "price": "number"
+        }
+      ],
+      "totalPrice": "number",
+      "status": "PROCESSING | CANCELED | CONFIRMED | REFUNDED",
+      "createdAt": "timestamp",
+      "updatedAt": "timestamp"
+    }
+  }
+}

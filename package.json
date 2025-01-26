@@ -1,0 +1,38 @@
+{
+  "name": "firestock",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/main.js",
+  "scripts": {
+    "dev": "tsx watch ./src/main.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "author": {
+    "name": "Mehdi Jai",
+    "url": "https://mehdijai.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehdijai/firestock"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.10",
+    "tsconfig-paths": "^4.2.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "firebase": "^11.2.0",
+    "helmet": "^8.0.0",
+    "ulid": "^2.3.0",
+    "x-xss-protection": "^2.0.0",
+    "zod": "^3.24.1"
+  }
+}
